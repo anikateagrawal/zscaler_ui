@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Zscaler UI</title>
+
+    <link rel="stylesheet" href="./style.css"></link>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-light sticky-top bg-white " style="border-top: 2px solid black;border-bottom: 2px solid black;box-shadow: 1px 1px 1px black;">
+        
+        <div class="container-fluid justify-content-between ps-5 pe-5">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Logo" width="200" height="100" />
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <form  class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+                
+                <div style="height: 100px;">
+                    <p style="margin: 0">LOGIN ID</p>
+                    <div class="d-flex">
+                        <input class="form-control me-2" id="username" type="text" required="required"
+                            placeholder="Type Your Login ID.." aria-label="Search" />
+                    </div>
+                    <div class="d-flex">
+                        <div class="d-flex flex-wrap  align-items-center">
+                            <input type="checkbox" name="" id="remember" />
+                            <p class="d-flex align-items-center m-0  ms-1">
+                                Remember my Login ID
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="align-items-start " style="height: 100px;">
+                    <p style="margin: 0">Password</p>
+                    <div class="d-flex">
+                        <input class="form-control me-2" id="password" type="password" required="required"
+                            placeholder="Enter Password.." aria-label="Search" />
+                        <button class="btn btn-primary" type="submit"  >Submit</button>
+                    </div>
+                    <div class="d-flex">
+                        <div class="dropdown">
+                            <i class="fa-solid fa-globe"></i>
+                            <select class="dropdown-toggle" href="#" id="cloudname" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"
+                                style="text-decoration: none;border:none;outline: none; color: black">
+
+                                <ul class="dropdown-menu" aria-labelledby="cloudname">
+                                    <option value="zscalerbeta" selected class="dropdown-item" >zscalerbeta</option>
+                                    <option value="zscaler" class="dropdown-item" >zscaler </option>
+                                    <option value="zscalerone" class="dropdown-item" >zscalerone </option>
+                                    <option value="zscalertwo" class="dropdown-item" >zscalertwo </option>
+                                    <option value="zscalerthree" class="dropdown-item" >zscalerthree </option>
+                                    <option value="zscloud" class="dropdown-item" >zscloud </option>
+                                </ul>
+                            </select>
+                            
+                        </div>
+                    </div>
+                    <div id="alert" style="position: sticky;bottom:0"></div>
+                    
+                </div>
+            
+            </form>
+        
+        </div>
+    </nav>
+
+    <div class="container-fluid m-0 w-100 p-0">
+        <div class="d-flex flex-wrap ">
+            <div class=" ps-5 flex-grow-1" style="height: 400px; background-color: rgba(211, 211, 211, 0.717)">
+                <div class="d-flex flex-column align-items-start justify-content-center" style="height:100%;width: 320px;">
+                <h1>Register Now For Zenith Live 2024</h1>
+                <h6 >Experience the power of AI + Zero Trust</h6>
+                <a href="https://www.zscaler.com/events/zenithlive2024" class="btn btn-outline-primary"> Register Now</a>
+            </div>
+            </div>
+            <div class="p-0 flex-grow-1" style="width:300px;">
+                <div style="height: 200px;background-color: bisque;">
+                    <img src="./images/zenith.png" alt="" style="width: 100%;height:100%;">
+                </div>
+                <div style="height: 200px;background-color: black;">
+                    <img src="./images/back.png" alt="" style="width: 100%;height:100%">
+                </div>
+            </div>
+            <div class=" p-0 flex-grow-1" style="height: 400px; background-color: blueviolet">
+                <img src="./images/ceo.png" alt="CEO" style="width: 100%; height:100%">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex flex-wrap m-0 p-0 ">
+        <div class="flex-grow-1 p-3" style="background-image: url('./images/img.jpg');background-size: cover;">
+            <div style="width:250px;height: 200px;">
+            <p style="color:white ;">Migration to a Common Identity Platform : ZIdentity</p>
+            <a href="https://www.zscaler.com/blogs/product-insights/introducing-zidentity-migrating-admins-centralized-identity-experience" class="btn btn-outline-light">Explore Now</a>
+            </div>
+        </div>
+        <div class="flex-grow-1 p-3" style="background-image: url('./images/img2.jpg');background-size: cover;">
+            <div style="width:250px;height: 200px;">
+            <p style="color:white ;">Threat Labz AI Security 2024 Report</p>
+            <a href="https://info.zscaler.com/resources-industry-reports-threatlabz-ai-security-2024" class="btn btn-outline-light">Explore Now</a>
+            </div>
+        </div>
+        <div class="flex-grow-1 p-3" style="background-image: url('./images/img4.jpg');background-size: cover;">
+            <div style="width:250px;height: 200px;">
+            <p style="color:white ;">Introducing the Future of Digital Experience Monitoring using Gen AI</p>
+            <a href="https://info.zscaler.com/webinar-introducing-the-future-of-digital-experience-monitoring-using-genai" class="btn btn-outline-light">Watch Now</a>
+            </div>
+        </div>
+        <div class="flex-grow-1 p-3" style="background-image: url('./images/img3.jpg');background-size: cover;">
+            <div style="width:250px;height: 200px;">
+            <p style="color:white ;">Read About the Latest Zscaler Innovations</p>
+            <a href="https://www.zscaler.com/" class="btn btn-outline-light ">Explore Now</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid w-100 m-0 bg-dark text-white-50 d-flex justify-content-center align-items-center " style="height: 50px;"> Copyright &copy; 2007-2024 Zscaler Inc. All rights reserved.</div>
+
+    <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
